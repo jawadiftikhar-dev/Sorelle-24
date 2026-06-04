@@ -1,0 +1,105 @@
+        :root {
+            /* 1. Brand Palette (Warm Minimal Parisian) */
+            --ivory: #f8f5f1;
+            --sand: #ede6db;
+            --sage: #4f5a4d;
+            --taupe: #785d49;
+            /* Enhanced color value for WCAG AA compliance on ivory/white backgrounds */
+            --caramel: #b38b6d;
+            --rose: #a95e4e;
+            /* Enhanced color value for WCAG AA compliance on ivory/white backgrounds */
+            --deep: #2a2521;
+            --muted: #7a6f63;
+            /* Meets AAA on Ivory and AA on Sand */
+            --line: rgba(42, 37, 33, 0.12);
+            --white: #ffffff;
+
+            /* 2. Class & Theme Aliases */
+            --bg: var(--ivory);
+            --bg-2: var(--sand);
+            --bg-3: #e1dacf;
+            --ink: var(--deep);
+            --ink-2: #1f1b16;
+            --olive: var(--sage);
+            --olive-2: #3c453b;
+            --gold: #d4a253;
+            --gold-deep: #b07e2c;
+            --gold-2: #e7c485;
+            --terracotta: var(--rose);
+            --paper: var(--white);
+            --serif: "Playfair Display", Georgia, serif;
+            --sans: "Instrument Sans", "Plus Jakarta Sans", system-ui, sans-serif;
+
+            /* 3. Typography Scales */
+            --fs-xs: 0.65rem;
+            --fs-sm: 0.72rem;
+            --fs-body-xs: 0.75rem;
+            --fs-body-sm: 0.85rem;
+            --fs-body: 0.92rem;
+            --fs-base: 1rem;
+            --fs-lg: 1.15rem;
+            --fs-xl: 1.25rem;
+            --fs-2xl: 1.35rem;
+            --fs-3xl: 1.45rem;
+            --fs-4xl: 1.7rem;
+            --fs-5xl: 1.85rem;
+            --fs-6xl: 2.1rem;
+            --fs-7xl: 2.2rem;
+            --fs-8xl: 2.8rem;
+            --fs-9xl: 3.1rem;
+            --fs-10xl: 3.8rem;
+
+            --lh-tight: 1.1;
+            --lh-heading: 1.15;
+            --lh-short: 1.35;
+            --lh-tall: 1.45;
+            --lh-base: 1.65;
+            --lh-relaxed: 1.7;
+
+            /* 4. Standardized Spacing (Systematic 8-Base Scale) */
+            --space-1: 0.25rem;
+            /* 4px */
+            --space-2: 0.5rem;
+            /* 8px */
+            --space-3: 0.75rem;
+            /* 12px */
+            --space-4: 1rem;
+            /* 16px */
+            --space-5: 1.1rem;
+            /* 17.6px (Custom spacing) */
+            --space-6: 1.25rem;
+            /* 20px */
+            --space-7: 1.5rem;
+            /* 24px */
+            --space-8: 1.75rem;
+            /* 28px */
+            --space-9: 2.25rem;
+            /* 36px */
+            --space-10: 2.75rem;
+            /* 44px */
+            --space-11: 3rem;
+            /* 48px */
+            --space-12: 4rem;
+            /* 64px */
+            --space-13: 4.5rem;
+            /* 72px */
+            --space-14: 5rem;
+            /* 80px */
+            --space-15: 7.5rem;
+            /* 120px */
+
+            /* 5. Radii & Shadows */
+            --r-xs: 4px;
+            --r-sm: 12px;
+            --r-md: 18px;
+            --r-lg: 28px;
+            --radius: var(--r-md);
+            --radius-lg: var(--r-lg);
+
+            --shadow: 0 10px 40px rgba(42, 37, 33, 0.08);
+            --shadow-lg: 0 25px 70px rgba(42, 37, 33, 0.12);
+            --sh-sm: 0 6px 18px -10px rgba(20, 16, 12, 0.25);
+            --sh-md: 0 22px 50px -28px rgba(20, 16, 12, 0.45);
+            --sh-lg: 0 40px 90px -40px rgba(20, 16, 12, 0.55);
+            --sh-chef: 0 30px 60px rgba(31, 26, 21, 0.1);
+        }
