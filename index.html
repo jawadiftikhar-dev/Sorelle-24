@@ -1,0 +1,1838 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SORELLE 24 — Paris</title>
+    <meta name="description"
+        content="SORELLE 24 — A modern French tasting house in Paris. 28 seats. Three Michelin stars." />
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+        <!-- STYLES .CSS -->
+
+        <link rel="stylesheet" href="./styles/design-system.css">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar py-2 small">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>28 Rue des Archives, Paris • +33 1 42 78 29 00</div>
+            <div class="d-none d-md-block">TUE–SAT • 19:00–23:30</div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+        <div class="container">
+            <a class="nav-brand" href="#home">SORELLE 24 <span>PARIS</span></a>
+
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-none d-lg-flex gap-1">
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#dishes">Dishes</a>
+                    <a class="nav-link" href="#menuPath">Menu</a>
+                    <a class="nav-link" href="#experiences">Experiences</a>
+                    <a class="nav-link" href="#reserve">Reserve</a>
+                </div>
+
+                <div class="cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+                    <i class="bi bi-bag"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </div>
+
+                <button class="btn btn-outline" style="padding: 0.55rem 1.1rem; font-size: 0.75rem"
+                    data-bs-toggle="offcanvas" data-bs-target="#searchOffcanvas">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navMenu">
+                    <i class="bi bi-list fs-2"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+        <div class="container d-lg-none py-3 bg-white border-top">
+            <div class="d-flex flex-column gap-2">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#dishes">Dishes</a>
+                <a class="nav-link" href="#menuPath">Menu</a>
+                <a class="nav-link" href="#experiences">Experiences</a>
+                <a class="nav-link" href="#reserve">Reserve</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-start">
+                    <div class="hero-badge mb-4">
+                        <i class="bi bi-star-fill me-1"></i> MICHELIN ★★★ • WORLD’S 50
+                        BEST #11
+                    </div>
+                    <h1 class="mb-4">A house of<br />quiet precision.</h1>
+                    <p class="hero-subtitle mb-5">
+                        28 seats. One chef. A single 14-course journey that changes with
+                        the season.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#reserve" class="btn btn-primary">Reserve Your Seat</a>
+                        <a href="#menu" class="btn btn-outline">Explore the Menu</a>
+                    </div>
+
+                    <div class="mt-5 d-flex align-items-center gap-4">
+                        <div class="d-flex">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+                                class="rounded-circle border border-white" style="
+                    margin-right: -12px;
+                    z-index: 3;
+                    height: 62px;
+                    width: 62px;
+                  " alt="" />
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                                class="rounded-circle border border-white" style="
+                    margin-right: -12px;
+                    z-index: 2;
+                    height: 62px;
+                    width: 62px;
+                  " alt="" />
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
+                                class="rounded-circle border border-white" style="height: 62px; width: 62px" alt="" />
+                        </div>
+                        <div class="small">
+                            <div><strong>4.98</strong> • 2,184 reviews</div>
+                            <div class="text-muted">
+                                “The most refined meal of my life.”
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=900&q=80"
+                            class="rounded-4 shadow-lg w-100" style="aspect-ratio: 4/4.5; object-fit: cover" alt="" />
+                        <div class="position-absolute bottom-0 start-0 p-4 bg-white rounded-4 m-3 shadow-sm"
+                            style="max-width: 260px; z-index: 4">
+                            <div class="small text-sage fw-semibold">NEXT AVAILABLE</div>
+                            <div class="fw-semibold">18 February • 19:30</div>
+                            <div class="text-muted small">Only 2 seats remain</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-track">
+            <div class="marquee-item">
+                MICHELIN 3 STARS • WORLD’S 50 BEST #11 • Gault&amp;Millau 19.5/20 • La
+                Liste Top 5 • 100% Seasonal Produce • Zero Waste Kitchen
+            </div>
+            <div class="marquee-item">
+                MICHELIN 3 STARS • WORLD’S 50 BEST #11 • Gault&amp;Millau 19.5/20 • La
+                Liste Top 5 • 100% Seasonal Produce • Zero Waste Kitchen
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 reveal">
+                    <div class="position-relative">
+                        <div class="about-grid">
+                            <img class="tall"
+                                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80"
+                                alt="Restaurant interior" />
+                            <img class="short"
+                                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=80"
+                                alt="Gourmet dish" />
+                            <img class="short"
+                                src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=500&q=80"
+                                alt="Plated food" />
+                        </div>
+                        <div class="stat-float">
+                            <div class="n">15</div>
+                            <div>
+                                <strong>Years of</strong>
+                                <div class="small text-muted">Culinary Excellence</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal">
+                    <span class="eyebrow">Our Story</span>
+                    <h2 class="h-title">
+                        Where Tradition Meets <span class="text-gold">Modern Craft</span>
+                    </h2>
+                    <p class="lead-muted mt-3">
+                        Born from a love of fire-kissed cooking and honest ingredients,
+                        SORELLE 24 has spent over a decade redefining fine dining. Every
+                        dish tells a story — sourced from local farmers, aged in-house,
+                        and finished with meticulous precision.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <div class="tick">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <div>
+                                    <strong>Locally Sourced</strong>
+                                    <div class="small text-muted">
+                                        Daily fresh regional produce
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tick">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <div>
+                                    <strong>Open-Flame Kitchen</strong>
+                                    <div class="small text-muted">Wood-fired to perfection</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="tick">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <div>
+                                    <strong>300+ Wine Cellar</strong>
+                                    <div class="small text-muted">Rare curated vintages</div>
+                                </div>
+                            </div>
+                            <div class="tick">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <div>
+                                    <strong>Crafted with Heart</strong>
+                                    <div class="small text-muted">
+                                        Hospitality in every detail
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap align-items-center gap-4 mt-4">
+                        <a href="#reserve" class="btn btn-ghost btn-lg">Discover Our Experience</a>
+                        <div>
+                            <div class="sign">Amélie Durand</div>
+                            <div class="small text-muted">Founder &amp; Executive Chef</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" class="section">
+        <div class="container">
+            <div class="row align-items-end mb-5">
+                <div class="col-lg-7">
+                    <span class="eyebrow">Our Philosophy</span>
+                    <h2 class="serif display-5 mt-2">
+                        Less is everything.<br />We remove what doesn’t matter.
+                    </h2>
+                </div>
+                <div class="col-lg-5">
+                    <p class="text-muted">
+                        SORELLE 24 exists to serve one tailored meal. No complex à la
+                        carte. No compromises. Every plate is a key sentence in a story
+                        that lasts three hours.
+                    </p>
+                </div>
+            </div>
+
+            <div class="philo-grid">
+                <div class="philo-card reveal">
+                    <div class="text-sage mb-3" style="
+                font-size: 2.4rem;
+                font-family: var(--serif);
+                font-weight: 400;
+              ">
+                        01
+                    </div>
+                    <h5>One table. One menu.</h5>
+                    <p class="text-muted small mb-0">
+                        Everyone eats the same 14-course journey. It creates conversation
+                        and community.
+                    </p>
+                </div>
+                <div class="philo-card reveal">
+                    <div class="text-sage mb-3" style="
+                font-size: 2.4rem;
+                font-family: var(--serif);
+                font-weight: 400;
+              ">
+                        02
+                    </div>
+                    <h5>Time is an ingredient.</h5>
+                    <p class="text-muted small mb-0">
+                        We age, ferment, and cure for weeks and months. Speed is the enemy
+                        of depth.
+                    </p>
+                </div>
+                <div class="philo-card reveal">
+                    <div class="text-sage mb-3" style="
+                font-size: 2.4rem;
+                font-family: var(--serif);
+                font-weight: 400;
+              ">
+                        03
+                    </div>
+                    <h5>Nothing is wasted.</h5>
+                    <p class="text-muted small mb-0">
+                        Every scrap becomes broth, vinegar, or soil. Our waste goes to the
+                        garden.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredient Spotlight -->
+    <section class="section bg-sand" id="menuPath">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <span class="eyebrow">February 2025</span>
+                    <h2 class="serif display-6 mt-2">This month’s obsession</h2>
+                </div>
+                <a href="#" class="btn btn-outline d-none d-md-block">Meet our producers</a>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 reveal mb-4">
+                    <a class="cat-card" href="#menu" data-filter="mains"><img
+                            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80"
+                            alt="Mains" /><span class="go"><i class="bi bi-arrow-up-right"></i></span>
+                        <div class="body">
+                            <small>42 dishes</small>
+                            <h4>Main Courses</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal mb-4">
+                    <a class="cat-card" href="#menu" data-filter="starters"><img
+                            src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80"
+                            alt="Starters" /><span class="go"><i class="bi bi-arrow-up-right"></i></span>
+                        <div class="body">
+                            <small>28 dishes</small>
+                            <h4>Starters</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal mb-4">
+                    <a class="cat-card" href="#menu" data-filter="desserts"><img
+                            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80"
+                            alt="Desserts" /><span class="go"><i class="bi bi-arrow-up-right"></i></span>
+                        <div class="body">
+                            <small>18 dishes</small>
+                            <h4>Desserts</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 reveal mb-4">
+                    <a class="cat-card" href="#menu" data-filter="drinks"><img
+                            src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80" onerror="
+                  this.src =
+                    'https://images.unsplash.com/photo-1551782450-a2132b4ba21d?w=600&q=80'
+                " alt="Drinks" /><span class="go"><i class="bi bi-arrow-up-right"></i></span>
+                        <div class="body">
+                            <small>30 drinks</small>
+                            <h4>Drinks &amp; Bar</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION 1: Exclusive Chapters (3 Colorful Banners) -->
+    <section id="banners" class="section bg-cream">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="eyebrow">Exquisite Encounters</span>
+                <h2 class="serif display-6 mt-2">
+                    Special Chapters &amp; Encounters
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 600px">
+                    Unlock highly unique tasting masterclasses, botanical pairings, and
+                    private dining options curated for culinary connoisseurs.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 reveal mb-4">
+                    <div class="colorful-banner" style="
+                background: linear-gradient(135deg, #b87c6b, #d49a8b);
+                color: #ffffff;
+              ">
+                        <div>
+                            <span class="banner-tag">Sommelier Selects</span>
+                            <h3>Amber Wine Flight</h3>
+                            <p>
+                                A rare, private exploration of natural wines aged in clay
+                                amphoras. Curated specially from the wild vineyards of Georgia
+                                and the Jura.
+                            </p>
+                        </div>
+                        <a href="#reserve" class="btn-banner">Inquire Now <i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal mb-4">
+                    <div class="colorful-banner" style="
+                background: linear-gradient(135deg, #4f5a4d, #70806c);
+                color: #ffffff;
+              ">
+                        <div>
+                            <span class="banner-tag">Botanical Lab</span>
+                            <h3>Greenhouse Tea</h3>
+                            <p>
+                                Our daily selection of wild home-fermented flower tonics,
+                                wood-fired infusions, and biodynamic herbal teas picked
+                                straight from our Fontainebleau estate.
+                            </p>
+                        </div>
+                        <a href="#menu" class="btn-banner">View Selections <i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 reveal mb-4">
+                    <div class="colorful-banner" style="
+                background: linear-gradient(135deg, #b07e2c, #d4a253);
+                color: #1a150e;
+              ">
+                        <div>
+                            <span class="banner-tag">Masterclass</span>
+                            <h3>The Art of Fire</h3>
+                            <p>
+                                An intimate kitchen session with Chef patron Amélie Durand.
+                                Discover open-flame cooking, smoke profiling, and traditional
+                                French timber selection.
+                            </p>
+                        </div>
+                        <a href="#reserve" class="btn-banner">Apply for Stage <i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes -->
+    <section id="dishes" class="section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="eyebrow">Signature Collection</span>
+                <h2 class="serif display-6 mt-2">Dishes that define our legacy</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px">
+                    Each plate represents months of trial, precision, and alignment with
+                    the local terroir.
+                </p>
+            </div>
+            <div class="row" id="dishesGrid">
+                <!-- Dynamically populated via Javascript with our new professional layout -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Levels -->
+    <section id="experiences" class="section bg-sand">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <span class="eyebrow">Three Journeys</span>
+                    <h2 class="serif display-6 mt-2">Choose your depth.</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="exp-card reveal">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div>
+                                <h5 class="mb-1">Classic</h5>
+                                <div class="text-muted small">14 courses • 3 hours</div>
+                            </div>
+                            <div class="exp-price">€295</div>
+                        </div>
+                        <ul class="small text-muted mb-4 p-0" style="list-style-type: none">
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Full tasting
+                                menu
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Non-alcoholic
+                                pairing included
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Window or
+                                central seating
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline w-100" onclick="addExperience(0)">
+                            Select Classic
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="exp-card reveal">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div>
+                                <h5 class="mb-1">Extended</h5>
+                                <div class="text-muted small">17 courses • 3.5 hours</div>
+                            </div>
+                            <div class="exp-price">€365</div>
+                        </div>
+                        <ul class="small text-muted mb-4 p-0" style="list-style-type: none">
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Everything in
+                                Classic
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>5 rare wine
+                                pairings
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Chef’s table
+                                seating
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Take-home
+                                gift box
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary w-100" onclick="addExperience(1)">
+                            Select Extended
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="exp-card reveal">
+                        <div class="d-flex justify-content-between align-items-start mb-4">
+                            <div>
+                                <h5 class="mb-1">Chef’s Table</h5>
+                                <div class="text-muted small">19 courses • 4 hours</div>
+                            </div>
+                            <div class="exp-price">€475</div>
+                        </div>
+                        <ul class="small text-muted mb-4 p-0" style="list-style-type: none">
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Everything in
+                                Extended
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Private chef
+                                interaction
+                            </li>
+                            <li class="bi mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Full cellar
+                                access
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check-circle me-2 text-sage"></i>Personal
+                                sommelier
+                            </li>
+                        </ul>
+                        <button class="btn btn-outline w-100" onclick="addExperience(2)">
+                            Select Chef’s Table
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Explorer -->
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="eyebrow">The Menu</span>
+                <h2 class="serif display-6 mt-2">February 2025</h2>
+                <p class="text-muted">
+                    Explore the acts of our seasonal culinary theater. Add items
+                    directly to your booking.
+                </p>
+            </div>
+
+            <div class="menu-tabs mb-4" id="menuTabs">
+                <div class="menu-tab active" data-category="first">Starters</div>
+                <div class="menu-tab" data-category="second">Main Courses</div>
+                <div class="menu-tab" data-category="dessert">Desserts</div>
+                <div class="menu-tab" data-category="wine">Drinks &amp; Bar</div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9" id="menuContent">
+                    <!-- Dynamic Menu list with images and actions populated here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chef -->
+    <section id="chef" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <div class="chef-wrap">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=900&q=80"
+                            class="chef-img" alt="Chef Amélie Durand" />
+                        <div class="chef-card-float">
+                            <div class="small text-uppercase text-olive fw-semibold mb-2"
+                                style="letter-spacing: 0.15em; font-size: 0.65rem">
+                                Chef Patron
+                            </div>
+                            <h5 class="mb-2">Amélie Durand</h5>
+                            <p class="text-muted-2 small mb-0">
+                                L'Arpège · Noma · Ryugin<br />Paris, since 2014
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="eyebrow">The Kitchen</span>
+                    <h2 class="section-title mt-2 mb-4">
+                        Built on craft,<br />not ego.
+                    </h2>
+                    <p class="text-muted-2 fs-5">
+                        Trained at L'Arpège, Noma, and Ryugin, Chef Durand returned to
+                        Paris with a single conviction: remove the noise, amplify the
+                        taste.
+                    </p>
+                    <p class="text-muted-2">
+                        Her team of 14 works a balanced four-day week — because rested
+                        cooks produce culinary artwork. There are no shortcuts, no
+                        pre-plated sauces, and no freezing. Every plate leaves the pass at
+                        its peak.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-sm-6">
+                            <div class="p-3 bg-cream-2 rounded-3">
+                                <i class="bi bi-award text-olive me-2"></i><strong>Chef of the Year</strong><br /><span
+                                    class="small text-muted-2">Gault & Millau, 2023</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-3 bg-cream-2 rounded-3">
+                                <i class="bi bi-trophy text-olive me-2"></i><strong>World's 50 Best</strong><br /><span
+                                    class="small text-muted-2">#11, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#journal" class="btn btn-ghost mt-4">Read the Interview</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row mb-5 align-items-end">
+                <div class="col-lg-6">
+                    <span class="eyebrow">The Day</span>
+                    <h2 class="serif display-6 mt-2">From soil to plate.</h2>
+                    <p class="text-muted mb-0">
+                        Every detail of the timeline is closely monitored to protect our
+                        zero-waste and hyper-seasonal philosophy.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <!-- Left side: Timeline -->
+                <div class="col-lg-6 mb-4">
+                    <div class="timeline">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <strong>04:45</strong> — Market run at Rungis with the produce
+                            buyer
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <strong>08:30</strong> — Ferments, broths, and bread begin
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <strong>14:00</strong> — Team tasting of the new menu
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <strong>17:30</strong> — Final plating rehearsal
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <strong>19:00</strong> — Doors open. The room goes quiet.
+                        </div>
+                    </div>
+                </div>
+                <!-- Right side: Beautiful visual balance block -->
+                <div class="col-lg-6 reveal">
+                    <div class="creative-pass-box">
+                        <img class="creative-pass-img"
+                            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&q=80"
+                            alt="Artisanal Plating" />
+                        <blockquote class="creative-pass-quote">
+                            "Complexity is simple. Executing true simplicity with absolute,
+                            quiet precision is the hardest discipline in the kitchen."
+                        </blockquote>
+                        <div class="mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="small text-muted text-uppercase fw-semibold" style="letter-spacing: 0.1em">
+                                    Kitchen Focus
+                                </div>
+                                <strong class="text-sage">Daily Live Rehearsals</strong>
+                            </div>
+                            <span class="badge rounded-pill bg-cream text-sage border py-2 px-3">Standard
+                                Operating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="section bg-sand">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <span class="eyebrow">Sustainability</span>
+                    <h2 class="serif display-6 mt-2">We measure what matters.</h2>
+                    <p class="text-muted mt-3">
+                        We track every gram of waste, every kilometer traveled by
+                        ingredients, and every liter of water used.
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="sust-grid">
+                        <div class="sust-item reveal">
+                            <div class="sust-num">98</div>
+                            <div class="small text-muted mt-1">
+                                Percent of waste composted or reused
+                            </div>
+                        </div>
+                        <div class="sust-item reveal">
+                            <div class="sust-num">4.2</div>
+                            <div class="small text-muted mt-1">
+                                km average ingredient travel distance
+                            </div>
+                        </div>
+                        <div class="sust-item reveal">
+                            <div class="sust-num">0</div>
+                            <div class="small text-muted mt-1">
+                                Single-use plastic in the kitchen
+                            </div>
+                        </div>
+                        <div class="sust-item reveal">
+                            <div class="sust-num">82</div>
+                            <div class="small text-muted mt-1">
+                                Percent of energy from rooftop solar
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION 2: Fontainebleau Kitchen Garden (Botanical Sourcing) -->
+    <section id="garden" class="section bg-cream">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 reveal order-lg-2">
+                    <div class="position-relative mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=900&q=80"
+                            class="rounded-4 shadow-lg w-100" style="aspect-ratio: 4/3; object-fit: cover"
+                            alt="Our Estate Garden" />
+                        <div class="position-absolute bottom-0 end-0 p-4 bg-white rounded-4 m-3 shadow-sm"
+                            style="max-width: 250px">
+                            <div class="small text-sage fw-semibold">
+                                <i class="bi bi-geo-alt-fill"></i> FONTAINEBLEAU
+                            </div>
+                            <div class="fw-semibold">1.2 Hectares</div>
+                            <div class="text-muted small">Our private farming estate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal order-lg-1">
+                    <span class="eyebrow">Terroir Sourcing</span>
+                    <h2 class="h-title">The Fontainebleau Kitchen Estate</h2>
+                    <p class="lead-muted mt-3">
+                        Sustaining 100% micro-seasonality requires hands-on dedication.
+                        Situated just south of Paris, our private estate supplies ATELIER
+                        28 with rare heirloom herbs, biodynamic micro-vegetables, and wild
+                        edible blossoms daily.
+                    </p>
+
+                    <ul class="garden-tick-list mt-4">
+                        <li>
+                            <i class="bi bi-flower1"></i>
+                            <div>
+                                <strong>Heirloom Botanical Roots</strong>
+                                <div class="small text-muted">
+                                    Reviving dozens of lost French botanical species.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-droplet-half"></i>
+                            <div>
+                                <strong>Natural Spring Rainwater Storage</strong>
+                                <div class="small text-muted">
+                                    Ensuring completely self-sufficient and natural crop
+                                    hydration.
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="bi bi-sun-fill"></i>
+                            <div>
+                                <strong>Harvested at Dawn</strong>
+                                <div class="small text-muted">
+                                    Ingredients are hand-picked at 5:00 AM to reach the pass by
+                                    noon.
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art & Interiors -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5">
+                <div>
+                    <span class="eyebrow">The Space</span>
+                    <h2 class="serif display-6 mt-2">Designed for attention.</h2>
+                </div>
+                <a href="#" class="btn btn-outline d-none d-md-block">Download floor plan</a>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="g-item g-1">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80" alt="" />
+                </div>
+                <div class="g-item g-2">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80" alt="" />
+                </div>
+                <div class="g-item g-3">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800&q=80" alt="" />
+                </div>
+                <div class="g-item g-4">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" alt="" />
+                </div>
+                <div class="g-item g-5">
+                    <img src="https://images.unsplash.com/photo-1551218372-dfa243e28637?w=800&q=80" alt="" />
+                </div>
+                <div class="g-item g-6">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80" alt="" />
+                </div>
+            </div>
+            <div class="text-center mt-3 small text-muted">
+                Architecture by Studio KO • Lighting by Ingo Maurer • Ceramics by
+                Studio M
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section bg-sand">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="eyebrow">Voices</span>
+                <h2 class="serif display-6 mt-2">After the last course.</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="test-card reveal">
+                        <div class="text-sage mb-3">★★★★★</div>
+                        <p class="test-quote">
+                            “I’ve eaten at the best restaurants in the world. This is the
+                            only one I think about every week.”
+                        </p>
+                        <div class="mt-4 pt-3 border-top small">
+                            <strong>— Elena Voss</strong><br />Creative Director, Berlin • 7
+                            visits
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card reveal">
+                        <div class="text-sage mb-3">★★★★★</div>
+                        <p class="test-quote">
+                            “Amélie’s kitchen is the most honest place I’ve ever eaten. No
+                            tricks. Just pure truth on a plate.”
+                        </p>
+                        <div class="mt-4 pt-3 border-top small">
+                            <strong>— Thomas Keller</strong><br />Chef, Napa • 2 visits
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="test-card reveal">
+                        <div class="text-sage mb-3">★★★★★</div>
+                        <p class="test-quote">
+                            “The service is invisible until the exact moment you need it.
+                            Elegant, silent, and brilliant.”
+                        </p>
+                        <div class="mt-4 pt-3 border-top small">
+                            <strong>— Priya Patel</strong><br />Architect, London • 4 visits
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Slider -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-end mb-5 reveal">
+                <div>
+                    <span class="eyebrow">Trending Now</span>
+                    <h2 class="h-title mb-0">
+                        Today's <span class="text-gold">Specials</span>
+                    </h2>
+                </div>
+                <div class="d-flex gap-2 mt-3 mt-md-0">
+                    <button class="slider-nav" data-bs-target="#specCarousel" data-bs-slide="prev">
+                        <i class="bi bi-arrow-left"></i>
+                    </button>
+                    <button class="slider-nav" data-bs-target="#specCarousel" data-bs-slide="next">
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="specCarousel" class="carousel slide reveal" data-bs-wrap="false">
+                <div class="carousel-inner" id="specInner"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section bg-cream-2">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="eyebrow">Simple &amp; Fast</span>
+                <h2 class="h-title text-center">
+                    How Ordering <span class="text-gold">Works</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="step">
+                        <div class="ring">
+                            <i class="bi bi-menu-button-wide"></i><span class="num">1</span>
+                        </div>
+                        <h5>Choose Dishes</h5>
+                        <p class="text-muted small mb-0">
+                            Browse the menu and add your favourites to the cart.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="step">
+                        <div class="ring">
+                            <i class="bi bi-bag-check"></i><span class="num">2</span>
+                        </div>
+                        <h5>Review Cart</h5>
+                        <p class="text-muted small mb-0">
+                            Adjust quantities and apply your preferred package.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="step">
+                        <div class="ring">
+                            <i class="bi bi-credit-card"></i><span class="num">3</span>
+                        </div>
+                        <h5>Checkout</h5>
+                        <p class="text-muted small mb-0">
+                            Secure popup checkout with multiple payment options.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="step">
+                        <div class="ring">
+                            <i class="bi bi-truck"></i><span class="num">4</span>
+                        </div>
+                        <h5>Enjoy</h5>
+                        <p class="text-muted small mb-0">
+                            Relax — your fresh feast is served on schedule.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counters -->
+    <section class="section counters">
+        <div class="container">
+            <div class="row reveal">
+                <div class="col-6 col-lg-3">
+                    <div class="cbox">
+                        <i class="bi bi-emoji-smile"></i>
+                        <div class="n counter" data-target="48000">0</div>
+                        <small>Happy Guests</small>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="cbox">
+                        <i class="bi bi-egg-fried"></i>
+                        <div class="n counter" data-target="120">0</div>
+                        <small>Unique Dishes</small>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="cbox">
+                        <i class="bi bi-award"></i>
+                        <div class="n counter" data-target="36">0</div>
+                        <small>Awards Won</small>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="cbox">
+                        <i class="bi bi-truck"></i>
+                        <div class="n counter" data-target="98">0</div>
+                        <small>% On-Time</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Chefs -->
+    <section class="section" id="chefs">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="eyebrow">The Artisans</span>
+                <h2 class="h-title text-center">
+                    Meet Our <span class="text-gold">Master Chefs</span>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="chef">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500&q=80"
+                            alt="Chef Amélie" />
+                        <div class="body">
+                            <div class="role">Executive Chef</div>
+                            <h5>Amélie Durand</h5>
+                            <div class="soc">
+                                <a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i
+                                        class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="chef">
+                        <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=500&q=80"
+                            alt="Chef Élise" />
+                        <div class="body">
+                            <div class="role">Pastry Chef</div>
+                            <h5>Élise Laurent</h5>
+                            <div class="soc">
+                                <a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i
+                                        class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="chef">
+                        <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=500&q=80" onerror="
+                  this.src =
+                    'https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=500&q=80'
+                " alt="Sommelier Hiro" />
+                        <div class="body">
+                            <div class="role">Head Sommelier</div>
+                            <h5>Hiro Tanaka</h5>
+                            <div class="soc">
+                                <a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i
+                                        class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 reveal">
+                    <div class="chef">
+                        <img src="https://images.unsplash.com/photo-1595257841889-eca2678454e2?w=500&q=80" onerror="
+                  this.src =
+                    'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=80'
+                " alt="Sofia Reyes" />
+                        <div class="body">
+                            <div class="role">Grill Master</div>
+                            <h5>Sofia Reyes</h5>
+                            <div class="soc">
+                                <a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i
+                                        class="bi bi-twitter-x"></i></a><a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wine Program -->
+    <section class="section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <span class="eyebrow">Wine Program</span>
+                    <h2 class="serif display-6 mt-2">A cellar of quiet obsession.</h2>
+                </div>
+                <div class="col-lg-6 d-flex align-items-end">
+                    <p class="text-muted">
+                        Head Sommelier Hiro Tanaka travels every month to curate a dynamic
+                        list of over 870 labels. No trophy bottles without soulful
+                        character.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="wine-card reveal">
+                        <div class="small text-sage">JURA • 2016</div>
+                        <h6>Château-Chalon Vin Jaune</h6>
+                        <div class="text-muted small mt-2">
+                            Oxidative. 6 years under veil. €68/glass
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="wine-card reveal">
+                        <div class="small text-sage">MOSEL • 2018</div>
+                        <h6>Egon Müller Riesling Auslese</h6>
+                        <div class="text-muted small mt-2">
+                            Slate, petrol, pure elegance. €42/glass
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="wine-card reveal">
+                        <div class="small text-sage">BURGUNDY • 2019</div>
+                        <h6>DRC Romanée-St-Vivant</h6>
+                        <div class="text-muted small mt-2">
+                            By the half bottle only. €420
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soundscape -->
+    <section class="section bg-sand">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4">
+                    <span class="eyebrow">Atmosphere</span>
+                    <h2 class="serif display-6 mt-2">The sound of 28.</h2>
+                    <p class="text-muted mt-3">
+                        We curate a living acoustic landscape that shifts with the season
+                        and the hour. Low, warm, intentional.
+                    </p>
+                    <div class="mt-4">
+                        <button class="btn btn-primary" onclick="playSound()">
+                            Play Current Soundscape
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <div class="sound-card reveal">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>Early Service</div>
+                                    <i class="bi bi-music-note"></i>
+                                </div>
+                                <div class="audio-bar">
+                                    <div class="audio-bar-inner" style="width: 70%"></div>
+                                </div>
+                                <small class="text-muted d-block mt-2">Jasper Høiby • Arvo Pärt</small>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="sound-card reveal">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>Mid Service</div>
+                                    <i class="bi bi-music-note"></i>
+                                </div>
+                                <div class="audio-bar">
+                                    <div class="audio-bar-inner" style="width: 45%"></div>
+                                </div>
+                                <small class="text-muted d-block mt-2">Nils Frahm • Hania Rani</small>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="sound-card reveal">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>Late Service</div>
+                                    <i class="bi bi-music-note"></i>
+                                </div>
+                                <div class="audio-bar">
+                                    <div class="audio-bar-inner" style="width: 85%"></div>
+                                </div>
+                                <small class="text-muted d-block mt-2">Max Richter • Ólafur Arnalds</small>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="sound-card reveal">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>After Hours</div>
+                                    <i class="bi bi-music-note"></i>
+                                </div>
+                                <div class="audio-bar">
+                                    <div class="audio-bar-inner" style="width: 30%"></div>
+                                </div>
+                                <small class="text-muted d-block mt-2">Sufjan Stevens • Nick Drake</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION 3: Private Dining & Salon Privé -->
+    <section id="salon" class="section bg-sand">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 reveal">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=900&q=80"
+                        class="rounded-4 shadow-lg w-100" style="
+                aspect-ratio: 16/10;
+                object-fit: cover;
+                margin-bottom: 2rem;
+              " alt="Salon Privé" />
+                </div>
+                <div class="col-lg-6 reveal ps-lg-5">
+                    <span class="eyebrow">Salon Privé</span>
+                    <h2 class="h-title">The Private Atelier</h2>
+                    <p class="lead-muted mt-3">
+                        Whether celebrating a milestone, hosting clients, or arranging a
+                        quiet family gather, our architectural sanctuary can be fully
+                        buy-out. Complete buyouts host up to 28 seated guests, or opt for
+                        an intimate chef-curated private session for up to 12.
+                    </p>
+                    <p class="text-muted mt-2">
+                        Our dedicated sommelier team can arrange historical bottle
+                        extractions directly from the sub-ground reserve for private
+                        masterclasses.
+                    </p>
+                    <div class="mt-4">
+                        <a href="mailto:events@atelier28.fr" class="btn btn-primary">Inquire for Private Buyouts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press -->
+    <section class="section">
+        <div class="container text-center">
+            <span class="eyebrow">In the Press</span>
+            <div class="press-grid mt-4">
+                <div class="press-item">The New York Times</div>
+                <div class="press-item">Le Monde</div>
+                <div class="press-item">Financial Times</div>
+                <div class="press-item">Condé Nast Traveler</div>
+                <div class="press-item">The Guardian</div>
+            </div>
+            <div class="mt-4 text-muted small">
+                “The most important restaurant in France right now.” — The New York
+                Times
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reserve" class="section bg-sand">
+        <div class="container">
+            <div class="row">
+                <!-- Left side: Headings & Complete Selected Items Receipt Panel -->
+                <div class="col-lg-5 mb-4 text-start">
+                    <span class="eyebrow">Reservations</span>
+                    <h2 class="serif display-6 mt-2">Book your seat.</h2>
+                    <p class="text-muted">
+                        We release slots 90 days in advance. Review your selected packages
+                        and dishes directly below. If empty, please select packages above
+                        to attach them to your request.
+                    </p>
+
+                    <!-- Premium Live Cart Receipt Panel -->
+                    <div class="receipt-booking-panel mt-4">
+                        <div class="receipt-header">
+                            <h6 class="serif text-sage mb-1">
+                                <i class="bi bi-receipt me-2"></i>Selection Summary
+                            </h6>
+                            <span class="text-muted small">Sorelle 24 Paris • Table Booking</span>
+                        </div>
+
+                        <div id="reserveCartPreview">
+                            <!-- Dynamically populated via updateReservePreview() -->
+                            <div id="reserveCartEmpty" class="text-muted text-center py-4">
+                                <i class="bi bi-bag-plus fs-3 d-block mb-2 text-muted"></i>
+                                Your dining bag is currently empty.<br />Add dishes or
+                                experiences above to link them.
+                            </div>
+                            <div id="reserveCartContent" style="display: none">
+                                <!-- Inline items loop from JS -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side: Form (Containing Embedded Table Selector) -->
+                <div class="col-lg-7">
+                    <form id="reserveForm" class="reserve-form">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="i.e Jawad Iftikhar" required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="i.e jawad.business@gmail.com"
+                                    required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-control" placeholder="i.e +92 307 6987496" required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Number of Guests</label>
+                                <select class="form-select" required>
+                                    <option>1</option>
+                                    <option selected>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Date</label>
+                                <input type="date" class="form-control" required />
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Preferred Time</label>
+                                <select class="form-select" required>
+                                    <option>19:00</option>
+                                    <option>19:30</option>
+                                    <option>20:00</option>
+                                    <option>20:30</option>
+                                    <option>21:00</option>
+                                </select>
+                            </div>
+
+                            <!-- Embedded Table Selection Feature inside Reservation Form -->
+                            <div class="col-12 mb-3">
+                                <label class="form-label">Select Table Preference</label>
+                                <div class="form-table-grid" id="tableSelector">
+                                    <div class="table-option active" data-table="window">
+                                        <div class="fw-semibold small">
+                                            <i class="bi bi-window me-1"></i> Window Table
+                                        </div>
+                                        <div style="
+                          font-size: 0.75rem;
+                          color: var(--muted);
+                          margin-top: 2px;
+                        ">
+                                            Aesthetic natural light
+                                        </div>
+                                    </div>
+                                    <div class="table-option" data-table="center">
+                                        <div class="fw-semibold small">
+                                            <i class="bi bi-people me-1"></i> Central Table
+                                        </div>
+                                        <div style="
+                          font-size: 0.75rem;
+                          color: var(--muted);
+                          margin-top: 2px;
+                        ">
+                                            Communal warm energy
+                                        </div>
+                                    </div>
+                                    <div class="table-option" data-table="chefs">
+                                        <div class="fw-semibold small text-sage">
+                                            <i class="bi bi-star-fill me-1"></i> Chef's Table
+                                        </div>
+                                        <div style="
+                          font-size: 0.75rem;
+                          color: var(--muted);
+                          margin-top: 2px;
+                        ">
+                                            +€75 • Direct kitchen views
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label class="form-label">Special Requests &amp; Precise Food Allergies</label>
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Please specify if you require gluten-free, vegetarian, or have other precise health adjustments..."></textarea>
+                            </div>
+
+                            <div class="col-12 mt-2">
+                                <button type="submit" class="btn btn-primary w-100 py-3">
+                                    Send Reservation Request
+                                </button>
+                                <div class="text-center small text-muted mt-2">
+                                    Our booking desk responds within 90 minutes.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <!-- Left side: Headings and Contact Detail Boxes -->
+                <div class="col-lg-5 d-flex flex-column justify-content-between text-start">
+                    <div>
+                        <h2 class="serif display-6">Come visit us.</h2>
+                        <p class="text-muted mt-3 mb-4">
+                            We are nestled in the historic Marais district, waiting to
+                            welcome you to our table.
+                        </p>
+                    </div>
+
+                    <!-- Stacked contact details boxes -->
+                    <div class="d-flex flex-column gap-3 mb-4 mb-lg-0">
+                        <div class="p-4 border rounded-4 bg-white shadow-sm">
+                            <div class="small text-sage fw-semibold mb-1" style="letter-spacing: 0.05em">
+                                <i class="bi bi-geo-alt-fill me-1"></i>ADDRESS
+                            </div>
+                            <div class="text-deep">
+                                28 Rue des Archives, 75004 Paris, France
+                            </div>
+                        </div>
+                        <div class="p-4 border rounded-4 bg-white shadow-sm">
+                            <div class="small text-sage fw-semibold mb-1" style="letter-spacing: 0.05em">
+                                <i class="bi bi-envelope-open-fill me-1"></i>CONTACT &
+                                RESERVATIONS
+                            </div>
+                            <div class="text-deep">
+                                +33 1 42 78 29 00<br />table@atelier28.fr
+                            </div>
+                        </div>
+                        <div class="p-4 border rounded-4 bg-white shadow-sm">
+                            <div class="small text-sage fw-semibold mb-1" style="letter-spacing: 0.05em">
+                                <i class="bi bi-clock-fill me-1"></i>OPENING HOURS
+                            </div>
+                            <div class="text-deep">
+                                Tuesday — Saturday<br />19:00 — 23:30 (Dinner Only)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side: Map container matching column height elegantly -->
+                <div class="col-lg-7">
+                    <div class="rounded-4 overflow-hidden border h-100" style="min-height: 420px">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=2.3555%2C48.855%2C2.3655%2C48.860&amp;layer=mapnik&amp;marker=48.8575%2C2.3605"
+                            width="100%" height="100%" style="border: 0; min-height: 420px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section bg-sand">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-start">
+                    <span class="eyebrow">Questions</span>
+                    <h2 class="serif display-6 mt-2">Everything you need to know.</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div id="faqContainer">
+                        <!-- JS populated -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tasting Packages -->
+    <section id="packages" class="section">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="eyebrow">Dining Experiences</span>
+                <h2 class="h-title text-center">
+                    Curated <span class="text-gold">Tasting Packages</span>
+                </h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 mb-4 reveal">
+                    <div class="plan">
+                        <div class="eyebrow">Essential</div>
+                        <h3 class="mt-2 h5">The Discovery</h3>
+                        <div class="price">
+                            €145<small class="fs-6 text-muted">/person</small>
+                        </div>
+                        <ul>
+                            <li><i class="bi bi-check2-circle"></i>3-course set menu</li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Seasonal starter &amp;
+                                dessert
+                            </li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Choice of main course
+                            </li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Welcome bread &amp; butter
+                            </li>
+                        </ul>
+                        <a href="#reserve" class="btn btn-ghost w-100">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 reveal">
+                    <div class="plan hot">
+                        <span class="badge-soft ribbon">Most Popular</span>
+                        <div class="eyebrow" style="color: var(--gold-2)">Signature</div>
+                        <h3 class="mt-2 h5" style="color: #fff">The Ember Journey</h3>
+                        <div class="price">
+                            €285<small class="fs-6" style="color: rgba(255, 255, 255, 0.6)">/person</small>
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>5-course tasting menu
+                            </li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Wine pairing per course
+                            </li>
+                            <li><i class="bi bi-check2-circle"></i>Chef's amuse-bouche</li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Signature Bresse chicken
+                            </li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Petit fours &amp; coffee
+                            </li>
+                        </ul>
+                        <a href="#reserve" class="btn btn-gold w-100">Choose Plan</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 reveal">
+                    <div class="plan">
+                        <div class="eyebrow">Premium</div>
+                        <h3 class="mt-2 h5">The Grand Cellar</h3>
+                        <div class="price">
+                            €425<small class="fs-6 text-muted">/person</small>
+                        </div>
+                        <ul>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>8-course chef's table
+                            </li>
+                            <li><i class="bi bi-check2-circle"></i>Reserve wine flight</li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Private kitchen seating
+                            </li>
+                            <li>
+                                <i class="bi bi-check2-circle"></i>Personalised menu card
+                            </li>
+                        </ul>
+                        <a href="#reserve" class="btn btn-ghost w-100">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal -->
+    <section id="journal" class="section bg-cream-2">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3">
+                <div>
+                    <span class="eyebrow">Journal</span>
+                    <h2 class="section-title mt-2 mb-0">From the<br />kitchen.</h2>
+                </div>
+                <a href="#" class="btn btn-ghost">All stories <i class="bi bi-arrow-up-right ms-1"></i></a>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <article class="blog-card reveal">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80"
+                            class="blog-img" alt="" />
+                        <div class="blog-body">
+                            <span class="blog-tag">Technique</span>
+                            <h5 class="mt-2 mb-2">Why we age fish for 14 days</h5>
+                            <p class="text-muted-2 small mb-0">
+                                Umami, texture, and the fine science of patience.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <article class="blog-card reveal">
+                        <img src="https://images.unsplash.com/photo-1506368083636-6defb67639a7?w=800&q=80"
+                            class="blog-img" alt="" />
+                        <div class="blog-body">
+                            <span class="blog-tag">Producers</span>
+                            <h5 class="mt-2 mb-2">Meet our mushroom forager</h5>
+                            <p class="text-muted-2 small mb-0">
+                                5 AM in Fontainebleau with Elise.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <article class="blog-card reveal">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800&q=80"
+                            class="blog-img" alt="" />
+                        <div class="blog-body">
+                            <span class="blog-tag">Wine</span>
+                            <h5 class="mt-2 mb-2">Jura, our current obsession</h5>
+                            <p class="text-muted-2 small mb-0">
+                                Vin jaune and deep oxidative aging.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="section">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-3">
+                <div>
+                    <span class="eyebrow">Follow</span>
+                    <h3 class="section-title mt-2 mb-0">@maisonorive</h3>
+                </div>
+                <a href="#" class="btn btn-ghost"><i class="bi bi-instagram me-2"></i>Follow</a>
+            </div>
+            <div class="ig-grid">
+                <a class="ig-item" href="#"><img
+                        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80" alt="" /></a>
+                <a class="ig-item" href="#"><img
+                        src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=500&q=80" alt="" /></a>
+                <a class="ig-item" href="#"><img
+                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80" alt="" /></a>
+                <a class="ig-item" href="#"><img
+                        src="https://images.unsplash.com/photo-1551218372-dfa243e28637?w=500&q=80" alt="" /></a>
+                <a class="ig-item" href="#"><img
+                        src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500&q=80" alt="" /></a>
+                <a class="ig-item" href="#"><img
+                        src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=500&q=80" alt="" /></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers -->
+    <section class="section-sm">
+        <div class="container">
+            <div class="careers">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <span class="eyebrow">Careers</span>
+                        <h3 class="section-title mt-2 mb-3">
+                            Join a team that cares about craft, not ego.
+                        </h3>
+                        <p class="text-muted-2 mb-0">
+                            Four-day work weeks, premium health coverage, and stages are
+                            welcome. Open roles available year-round.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="mailto:careers@atelier28.fr" class="btn btn-olive">View open roles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section pt-0">
+        <div class="container">
+            <div class="news reveal">
+                <div class="row align-items-centerposition-relative" style="z-index: 2">
+                    <div class="col-lg-6 text-start">
+                        <h2 class="h-title mb-2 text-start" style="color: #1d160b">
+                            Join Our Table
+                        </h2>
+                        <p class="mb-0" style="color: #3a2c14">
+                            Subscribe for early access to new menus, private events and
+                            members-only updates.
+                        </p>
+                    </div>
+                    <div class="col-lg-6" style="z-index: 10">
+                        <form class="d-flex gap-2 flex-wrap flex-sm-nowrap" id="newsForm" novalidate>
+                            <input type="email" class="form-control" placeholder="Enter your email address" required
+                                style="border-radius: 50px" />
+                            <button class="btn btn-primary btn-lg flex-shrink-0" style="
+                    background: var(--deep);
+                    border-color: var(--deep);
+                    color: #fff;
+                  ">
+                                Subscribe
+                            </button>
+                        </form>
+                        <div id="newsMsg" class="small mt-2 d-none" style="color: #1d160b">
+                            <i class="bi bi-check-circle me-1"></i>You're on our guest list!
+                            Check your inbox soon.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 text-start">
+                    <div class="footer-brand mb-3">SORELLE 24</div>
+                    <p style="max-width: 38ch; opacity: 0.75">
+                        A modern French tasting atelier in the heart of Paris. 28 seats,
+                        three Michelin stars, reservations essential.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-5"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="fs-5"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="fs-5"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-start">
+                    <h6>Explore</h6>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#philosophy">Philosophy</a></li>
+                        <li><a href="#chef">Chef</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#journal">Journal</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 text-start">
+                    <h6>Visit</h6>
+                    <ul>
+                        <li><a href="#reserve">Reservations</a></li>
+                        <li><a href="#">Private events</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 text-start">
+                    <h6>Contact</h6>
+                    <ul>
+                        <li>28 Rue des Archives<br />75004 Paris, France</li>
+                        <li><a href="tel:+33142782900">+33 1 42 78 29 00</a></li>
+                        <li>
+                            <a href="mailto:table@atelier28.fr">table@atelier28.fr</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-wrap justify-content-between gap-3">
+                <div>© 2026 SORELLE 24 by <a href="https://jawadiftikhar.com/" target="_blank">Jawad Iftikhar</a>. All rights reserved.</div>
+                <div class="d-flex gap-4">
+                    <a href="#">Privacy</a><a href="#">Terms</a><a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Reserve (Mobile Only) -->
+    <a href="#reserve" class="fab"><i class="bi bi-calendar-check"></i> Reserve a Seat</a>
+
+    <!-- Back to Top Button -->
+    <button id="toTop" class="btn btn-sage rounded-circle position-fixed shadow-lg" style="
+        display: none;
+        width: 52px;
+        height: 52px;
+        z-index: 1030;
+        align-items: center;
+        justify-content: center;
+        right: 20px;
+        bottom: 80px;
+        border: none;
+        background: var(--sage);
+        color: #fff;
+      ">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" id="cartOffcanvas" tabindex="-1">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title serif">Your Selections</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body" id="cartOffcanvasBody"></div>
+        <div class="offcanvas-footer p-4 border-top" id="cartOffcanvasFooter" style="display: none">
+            <div class="d-flex justify-content-between mb-3">
+                <span>Estimated total</span>
+                <span class="serif fs-4 text-sage" id="cartTotal"></span>
+            </div>
+            <a href="#reserve" class="btn btn-primary w-100">Continue to Reservation</a>
+        </div>
+    </div>
+
+    <!-- Search Offcanvas -->
+    <div class="offcanvas offcanvas-top" id="searchOffcanvas" tabindex="-1">
+        <div class="container py-5">
+            <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-search fs-4"></i>
+                <input type="text" class="form-control form-control-lg border-0 bg-transparent"
+                    placeholder="Type and press Enter to search..." id="searchInput" />
+            </div>
+            <div class="mt-3 text-muted small">
+                Try typing: “truffle”, “scallop”, “vin jaune” and then press Enter.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
